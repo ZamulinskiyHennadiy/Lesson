@@ -1,0 +1,78 @@
+body {
+
+}
+
+.case {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+div {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 361px;
+  font-size: 22px;
+}
+
+li>div>span:first-of-type {
+  font-family: "Tourney", serif;
+}
+
+li>div>span:nth-child(2) {
+  font-family: "Staatliches", serif;
+}
+
+li {
+  list-style: none;
+}
+
+.headers {
+  width: max-content;
+  margin: 70px 0px 40px;
+}
+
+h2 {
+  font-family: "Francois One", serif;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.case>div>span {
+  font-family: "Farro", serif;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+p {
+  font-family: "PT Sans", serif;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 2;
+}
+
+.go {
+  text-decoration: underline;
+}
+
+.kill {
+  font-weight: bold;
+}
+
+.kill:first-of-type {
+  margin-left: -35px;
+}
+
+.jazz {
+  background-color: lightgray;
+}
+.next {
+  font-style: italic;
+}
