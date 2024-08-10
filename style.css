@@ -36,8 +36,8 @@ header {
   height: var(--header-height);
   position: fixed;
   top: 0;
-  left: 350px;
-  right: 250px;
+  left: 150px;
+  right: 80px;
   max-width: var(--max-width);
   margin: auto;
   padding: var(--padding);
@@ -93,6 +93,7 @@ header>img {
 
 header>ul{
   display: flex;
+
 }
 
 header li:first-child::after {

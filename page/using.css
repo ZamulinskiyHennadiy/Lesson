@@ -1,39 +1,7 @@
-body {
-  height: 100%;
-  margin: 0;
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-p {
-  font-size: 1.5em;
-  margin: 0;
-}
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-header {
-  width: auto;
-  height: var(--header-height);
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: var(--padding);
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  z-index: 1;
-  background-color: #fff;
+  width: 100px;
+  height: 100px;
 }
 
 button {
@@ -51,16 +19,9 @@ button {
   user-select: none;
 }
 
-h2 {
-  font-family: "Francois One", serif;
-  font-size: 35px;
-  text-transform: uppercase;
-}
-
 .heading-container {
   display: flex;
   align-items: center;
-  
 }
 
 .heading-container::before {
@@ -69,22 +30,54 @@ h2 {
   width: 100px; 
   height: 8px; 
   background-color: black;
-  margin-right: 15px; 
+  margin-right: 2px; 
+  position: absolute;
 }
+
 .heading-text {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-h3{
-  border-bottom: 1px solid #bdbdbd;
-}
-ul>li>h3>a {
-  font-family: "Francois One", serif;
-  font-size: 35px;
-  text-transform: uppercase;
+header {
+  width: inherit;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 280px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--padding);
   display: flex;
-  gap: 40px;
+  flex-direction: row;
+  gap: 100px;
+}
+
+header>img {
+  margin-left: auto;
+}
+
+header>ul{
+  display: flex;
+}
+
+header li:first-child::after {
+  content: '/';
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-family: Farro;
+  line-height: 200px;
+  letter-spacing: 0.4em;
+  text-wrap: nowrap;
+  text-transform: capitalize;
+  margin: 150px;
 }
 
 a {
@@ -97,60 +90,6 @@ a {
   user-select: none;
 }
 
-p {
-  font-family: "PT Sans", serif;
-  font-size: 28px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 2;
-}
-
-.headings {
-  font-family: "Farro", serif;
-  margin-left: 5px;
-  font-size: 15px;
-  margin-top: 80px;
-}
-
-header {
-  width: inherit;
-  height: var(--header-height);
-  position: fixed;
-  top: 0;
-  left: 350px;
-  right: 250px;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: var(--padding);
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-
-header>ul{
-  display: flex;
-}
-
-header li:first-child::after {
-  content: '/';
-  margin: 10px;
-}
-
-button {
-  text-transform: uppercase;
-  font-family: Tourney;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-  text-align: center;
-  border: none;
-  outline: none;
-  background: inherit;
-  cursor: pointer;
-  user-select: none;
-}
-
 .cards {
   display: flex;
   justify-items: center;
@@ -158,7 +97,6 @@ button {
   list-style: none;
   flex-wrap: wrap;
   width: 1200px;
-
 }
 
 .flip-card {
