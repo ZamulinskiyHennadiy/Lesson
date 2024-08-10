@@ -3,7 +3,7 @@ body {
 }
 
 .background-image {
-  background-image: url('/pictures/mechanics.svg');
+  background-image: url('./pictures/mechanics.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 35px bottom 45px;
@@ -36,15 +36,15 @@ header {
   height: var(--header-height);
   position: fixed;
   top: 0;
-  left: 300px;
-  right: 150px;
+  left: 350px;
+  right: 250px;
   max-width: var(--max-width);
   margin: auto;
   padding: var(--padding);
   display: flex;
   flex-direction: row;
   gap: 50px;
-  z-index: 200;
+  z-index: 1;
   background-color: #fff;
 }
 
