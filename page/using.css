@@ -1,0 +1,204 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  width: auto;
+  height: var(--header-height);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: Tourney;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+h2 {
+  font-family: "Francois One", serif;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.heading-container::before {
+  content: "";
+  display: inline-block;
+  width: 100px; 
+  height: 8px; 
+  background-color: black;
+  margin-right: 15px; 
+}
+.heading-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3{
+  border-bottom: 1px solid #bdbdbd;
+}
+ul>li>h3>a {
+  font-family: "Francois One", serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  color: inherit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  user-select: none;
+}
+
+p {
+  font-family: "PT Sans", serif;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 2;
+}
+
+.headings {
+  font-family: "Farro", serif;
+  margin-left: 5px;
+  font-size: 15px;
+  margin-top: 80px;
+}
+
+header {
+  width: inherit;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 350px;
+  right: 250px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+header>ul{
+  display: flex;
+}
+
+header li:first-child::after {
+  content: '/';
+  margin: 10px;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: Tourney;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cards {
+  display: flex;
+  justify-items: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 1200px;
+
+}
+
+.flip-card {
+  width: 270px;
+  height: 180px;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  >* {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 180px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+  }
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background: #e6e6e6;
+}
+
+.flip-card-back {
+  background: #1a1a1a;
+  transform: rotateY(180deg)
+}

@@ -93,7 +93,6 @@ header>img {
 
 header>ul{
   display: flex;
-
 }
 
 header li:first-child::after {
