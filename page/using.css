@@ -2,9 +2,24 @@ bady {
   width:1200px;
 }
 
+header {
+  width: 1200px;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 0px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
 main {
-  width: 100px;
-  height: 100px;
+  width: 1200px;
+  margin: auto;
 }
 
 button {
@@ -22,6 +37,13 @@ button {
   user-select: none;
 }
 
+hr {
+  height: 2px;
+  width: 1200px;
+  margin:auto;
+
+}
+
 .heading-container {
   display: flex;
   align-items: center;
@@ -31,30 +53,14 @@ button {
   content: "";
   display: inline-block;
   width: 100px; 
-  height: 8px; 
+  height: 5px; 
   background-color: black;
-  margin-right: 2px; 
-  position: absolute;
+  margin-right: 8px; 
 }
 
 .heading-text {
   font-size: 30px;
   font-weight: bold;
-}
-
-header {
-  width: inherit;
-  height: var(--header-height);
-  position: fixed;
-  top: 0;
-  left: 50px;
-  right: 280px;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: var(--padding);
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
 }
 
 header>img {
@@ -80,7 +86,6 @@ span {
   letter-spacing: 0.4em;
   text-wrap: nowrap;
   text-transform: capitalize;
-  margin: 150px;
 }
 
 a {
